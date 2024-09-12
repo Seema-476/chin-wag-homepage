@@ -1,0 +1,160 @@
+:root {
+    /* font-size */
+    --font-xxsm: 10px;
+    --font-xsm: 14px;
+    --font-sm: 14px;
+    --font-md: 16px;
+    --font-lg: 14px;
+    --font-xl: 18px;
+    --font-2xl: 25px;
+    --font-3xl: 30px;
+
+    /* font-color */
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-dark-green: #2a3739;
+    --color-green: #4f6367;
+    --color-light-green: #7a9e9f;
+    --color-light-green100: #8fadae;
+    --color-gray: #d4d7d7;
+    --color-light-aqua: #ebffff;
+    --color-green100: #b8d8d8;
+    --color-green200: #88adae;
+    --footer-line: #929b9d;
+    --acco-border: #00000033;
+    --gif-shadow: #0000000A;
+
+}
+
+.color_white {
+    color: var(--color-white);
+}
+
+.color_black {
+    color: var(--color-black);
+}
+
+.color_dark_green {
+    color: var(--color-dark-green);
+}
+
+.color_green {
+    color: var(--color-green);
+}
+
+.color_light_green {
+    color: var(--color-light-green);
+}
+
+.color_light_aqua {
+    color: var(--color-light-aqua);
+}
+
+/* bg clr */
+.bg-color-white {
+    background-color: var(--color-white);
+}
+
+.bg_color_light_green {
+    background-color: var(--color-light-green);
+}
+.bg_color_light_green100 {
+    background-color: var(--color-light-green100);
+}
+
+.bg_color_green {
+    background-color: var(--color-green);
+}
+
+.bg_color_light_aqua {
+    background-color: var(--color-light-aqua);
+}
+
+.bg_color_green200 {
+    background-color: var(--color-green200);
+}
+
+/* font size */
+.font_xxsm {
+    font-size: var(--font-xxsm);
+}
+
+.font_xsm {
+    font-size: var(--font-xsm);
+}
+
+.font_sm {
+    font-size: var(--font-sm);
+}
+
+.font_md {
+    font-size: var(--font-md);
+}
+
+.font_lg {
+    font-size: var(--font-lg);
+}
+
+.font_xl {
+    font-size: var(--font-xl);
+}
+
+.font_2xl {
+    font-size: var(--font-2xl);
+}
+
+.font_3xl {
+    font-size: var(--font-3xl);
+}
+
+@media(max-width:576px) {
+    .btn_require {
+        font-size: 8px;
+    }
+
+    .btn_provide {
+        font-size: 8px;
+    }
+
+    .btn_requirement {
+        font-size: 12px;
+    }
+
+    .footer_btn {
+        font-size: 8px;
+    }
+
+    .Describe {
+        font-size: 18px;
+    }
+}
+@media(min-width:360px) and (max-width:374.98px) {
+    .Describe{
+        font-size: 16px;
+    }
+}
+
+@media(min-width:576px) {
+    :root {
+        --font-sm: 16px;
+        --font-md: 18px;
+        --font-lg: 20px;
+        --font-xl: 25px;
+        --font-2xl: 35px;
+        --font-3xl: 38px;
+    }
+}
+
+@media(min-width:768px) {}
+
+@media(min-width:992px) {
+    :root {
+        --font-xsm: 14px;
+        --font-sm: 16px;
+        /* --font-md: 18px; */
+
+        --font-xl: 25px;
+        --font-2xl: 45px;
+        --font-3xl: 46.44px;
+    }
+}

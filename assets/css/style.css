@@ -149,6 +149,7 @@
 
 .hero_bg_img {
     max-width: 683px;
+    min-height: 810px;
 }
 
 .hero_gif_dots {
@@ -225,7 +226,7 @@
 
 /* ================================== cards ============================== */
 .card_heading {
-    padding: 14px 0 10px 0;
+    padding: 14.5px 0 10px 0;
 }
 
 .svg_img {
@@ -245,7 +246,7 @@
 .cards {
     border: 1px solid var(--color-gray);
     border-radius: 8px;
-    padding: 24px 20px 21px 20px;
+    padding: 34px 20px 28px 20px;
     transition: 300ms linear;
     min-height: 286px;
 }
@@ -331,7 +332,7 @@
 }
 
 .commit_img {
-    max-width: 489px;
+    max-width: 319px;
 }
 
 .commit_cross_img {
@@ -403,6 +404,9 @@
 .half_circle {
     width: 36px;
 }
+        .cost_img {
+            max-width: 355px;
+        }
 
 /* ========================= Business ======================= */
 .page_bg {
@@ -670,13 +674,13 @@
 
 /* down to top btn */
 .topBtn {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     display: none;
     position: fixed;
-    bottom: 10px;
-    right: 2%;
+    bottom: 15px;
+    right: 15px;
     cursor: pointer;
     opacity: 0;
     visibility: hidden;
@@ -707,6 +711,17 @@
     100% {
         bottom: 50px;
     }
+}
+
+body {
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.on_cost1 {
+    padding: 0 0 14px 0;
+    max-width: 593px;
 }
 
 @media(max-width:575.98px) {
@@ -761,6 +776,13 @@
 }
 
 @media(min-width:576px) {
+            .cost_img {
+                    max-width: 606px;
+                }
+    .commit_img {
+        max-width: 489px;
+    }
+
     .accordion-button::after {
         top: 19px;
     }
@@ -802,8 +824,8 @@
     }
 
     .private_shadow {
-        top: 42%;
-        right: 15%;
+        top: 18%;
+        right: 20%;
         width: 402px;
         height: 300px;
     }
@@ -837,7 +859,7 @@
     }
 
     .footer_btn {
-        margin: 34px 0 33px 0;
+        margin: 34px 0 33.43px 0;
         padding: 18.5px 31.5px;
         border: 2px solid transparent;
         border-radius: 65px;
@@ -954,7 +976,7 @@
 
     .chin_wag_img {
         max-width: 191px;
-        padding: 17px 0 0;
+        padding: 17.84px 0 0;
     }
 
     .faq {
@@ -962,7 +984,7 @@
     }
 
     .footer {
-        padding-top: 42px;
+        padding-top: 42.6px;
     }
 
     .footer_text {
@@ -1052,12 +1074,25 @@
 }
 
 @media(min-width:992px) {
-    .on_cost {
+        .commit_img {
+                min-height: 527.7px;
+            }
+    .image_bottom_shadow {
+            bottom: 35px;
+            right: 0px;
+        }
+    .growth {
+        display: flex;
+    }
+
+    .on_cost1 {
         padding-top: 60px;
+        max-width: 593px;
     }
 
     .cost_img {
-        min-height: 420px;
+        max-width: 549px;
+        min-height: 430px;
     }
 
     .start {
@@ -1079,10 +1114,12 @@
 
     .marketing1 {
         max-width: 426px;
+        padding-top: 12px;
     }
 
     .marketing {
         max-width: 404px;
+        padding-bottom: 12px;
     }
 
     .business_image2 {
@@ -1106,6 +1143,7 @@
 
     .section_faq {
         padding: 105px 0 142px 0;
+        margin: -8px 0 -7px 0;
     }
 
     .commit_img_shadow {
@@ -1115,7 +1153,7 @@
     }
 
     .private_shadow {
-        top: 30%;
+        top: 13%;
         right: 10%;
         width: 402px;
         height: 380px;
@@ -1156,10 +1194,12 @@
 
     .card_section {
         padding: 90px 0 90px 0;
+        margin: -15px 0 0 0;
     }
 
     .Business {
         padding: 132px 0 80px 0;
+        margin: -9px 0 -15 0;
     }
 
     .stay_private {
@@ -1167,7 +1207,7 @@
     }
 
     .Commitment_section {
-        padding: 72px 0 143px 0;
+        padding: 73px 0 145px 0;
     }
 
     .leading_xxsm {
@@ -1206,8 +1246,18 @@
         line-height: 61.25px;
     }
 }
+@media(min-width:1130px){
+        .image_bottom_shadow {
+                bottom: -29px;
+                right: -25px;
+            }
+}
 
 @media(min-width:1200px) {
+    .image_bottom_shadow {
+            bottom: -30px;
+            right: -25px;
+        }
     .cross-img {
         top: 27%;
         left: 5%;

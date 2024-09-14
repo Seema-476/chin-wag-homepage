@@ -124,7 +124,7 @@
 }
 
 .main_para {
-    max-width: 409px;
+    max-width: 290px;
     padding: 12px 0 24px 0;
 }
 
@@ -565,7 +565,7 @@
 }
 
 .accordion-body {
-    padding: 0 10px 19px 20px;
+    padding: 0 19px 10px 14px;
     max-width: 750px;
     line-height: 24.46px;
 }
@@ -674,8 +674,8 @@
 
 /* down to top btn */
 .topBtn {
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
     display: none;
     position: fixed;
@@ -794,6 +794,9 @@ body {
     .accordion-button {
         padding: 16px 20px 18px 20px;
     }
+        .accordion-body {
+            padding: 0 10px 19px 20px;
+        }
 
     .publish_card {
         padding: 42.79px 31px 31px 31px;
@@ -804,6 +807,7 @@ body {
     }
 
     .main_para {
+        max-width: 409px;
         padding: 12px 0 29px 0;
     }
 
@@ -1074,11 +1078,14 @@ body {
 }
 
 @media(min-width:992px) {
+    .cost_sec_img_shadow{
+        max-width: 465px;
+    }
         .commit_img {
                 min-height: 527.7px;
             }
     .image_bottom_shadow {
-            bottom: 35px;
+            bottom: -7px;
             right: 0px;
         }
     .growth {
@@ -1251,9 +1258,15 @@ body {
                 bottom: -29px;
                 right: -25px;
             }
+                                .cost_sec_img_shadow {
+                                    max-width: 535px;
+                                }
 }
 
 @media(min-width:1200px) {
+        .cost_sec_img_shadow {
+                max-width: 606px;
+            }
     .image_bottom_shadow {
             bottom: -30px;
             right: -25px;

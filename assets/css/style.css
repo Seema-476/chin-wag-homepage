@@ -70,7 +70,7 @@
 
 /* ======================== hero-section =============================== */
 .navbar {
-    height: 95px;
+    height: 50px;
 }
 
 .logo_img {
@@ -142,8 +142,8 @@
 }
 
 .hero_bg {
-    top: -95px;
-    left: 0;
+    top: -184px;
+    left: -128px;
     z-index: -1;
 }
 
@@ -226,7 +226,7 @@
 
 /* ================================== cards ============================== */
 .card_heading {
-    padding: 14.5px 0 10px 0;
+    padding: 14.5px 0 13px 0;
 }
 
 .svg_img {
@@ -379,9 +379,9 @@
 }
 
 .btn_demo {
-    border: 2px solid transparent;
+    border: 1.21px solid var(--color-green);
     border-radius: 65px;
-    padding: 11.5px 27px;
+    padding: 10.5px 20px;
     transition: .5s;
 }
 
@@ -404,9 +404,10 @@
 .half_circle {
     width: 36px;
 }
-        .cost_img {
-            max-width: 355px;
-        }
+
+.cost_img {
+    max-width: 355px;
+}
 
 /* ========================= Business ======================= */
 .page_bg {
@@ -452,7 +453,11 @@
 }
 
 .negotiate {
-    transform: translateY(-78px);
+    transform: translate(20px, -74px);
+}
+
+.negotiate1 {
+    transform: translate(-4px, -74px);
 }
 
 .line {
@@ -703,20 +708,8 @@
     animation: move 2s infinite;
 }
 
-@keyframes move {
-    0% {
-        bottom: 10px;
-    }
-
-    100% {
-        bottom: 50px;
-    }
-}
-
-body {
-    max-width: 1920px;
-    margin-left: auto;
-    margin-right: auto;
+.pointer_event {
+    pointer-events: none;
 }
 
 .on_cost1 {
@@ -776,9 +769,14 @@ body {
 }
 
 @media(min-width:576px) {
-            .cost_img {
-                    max-width: 606px;
-                }
+    .navbar {
+        height: 70px;
+    }
+
+    .cost_img {
+        max-width: 606px;
+    }
+
     .commit_img {
         max-width: 489px;
     }
@@ -794,9 +792,10 @@ body {
     .accordion-button {
         padding: 16px 20px 18px 20px;
     }
-        .accordion-body {
-            padding: 0 10px 19px 20px;
-        }
+
+    .accordion-body {
+        padding: 0 10px 19px 20px;
+    }
 
     .publish_card {
         padding: 42.79px 31px 31px 31px;
@@ -871,7 +870,7 @@ body {
 
     .btn_requirement {
         border: 2px solid transparent;
-        padding: 16.5px 20px;
+        padding: 12.5px 20px;
     }
 
     .btn_requirement:hover {
@@ -926,7 +925,7 @@ body {
     }
 
     .btn_demo {
-        padding: 15.5px 27.5px;
+        padding: 12.5px 20.5px;
     }
 
     .btn_apply {
@@ -996,7 +995,7 @@ body {
     }
 
     .btn_require {
-        padding: 18.5px 30px;
+        padding: 12.5px 25px;
         border-radius: 65px;
         border: 2px solid transparent;
     }
@@ -1006,14 +1005,10 @@ body {
     }
 
     .btn_provide {
-        padding: 18.5px 27.5px;
+        padding: 12.5px 25px;
         border-radius: 65px;
         border: 2px solid var(--color-light-green);
         margin-left: 19px;
-    }
-
-    .btn_demo:hover {
-        border: 2px solid var(--color-green);
     }
 
     .hero_bg_color {
@@ -1045,15 +1040,15 @@ body {
     }
 
     .card_section {
-        padding: 60px 0 60px 0;
+        padding: 60px 0 30px 0;
     }
 
     .stay_private {
-        padding: 60px 0 60px 0;
+        padding: 40px 0 35px 0;
     }
 
     .Commitment_section {
-        padding: 60px 0 60px 0;
+        padding: 35px 0 60px 0;
     }
 
     .section_faq {
@@ -1078,18 +1073,38 @@ body {
 }
 
 @media(min-width:992px) {
-    .cost_sec_img_shadow{
+    .btn_demo {
+        border: 2px solid var(--color-green);
+        padding: 13.5px 27.5px;
+    }
+
+    .btn_demo:hover {
+        border: 2px solid var(--color-green);
+    }
+
+    .navbar {
+        height: 95px;
+    }
+
+    .btn_provide {
+        padding: 16.5px 27.5px;
+    }
+
+    .btn_require {
+        padding: 16.5px 30px;
+    }
+
+    .cost_sec_img_shadow {
         max-width: 465px;
     }
-        .commit_img {
-                min-height: 527.7px;
-            }
+
+    .commit_img {
+        min-height: 527.7px;
+    }
+
     .image_bottom_shadow {
-            bottom: -7px;
-            right: 0px;
-        }
-    .growth {
-        display: flex;
+        bottom: -7px;
+        right: 0px;
     }
 
     .on_cost1 {
@@ -1210,11 +1225,11 @@ body {
     }
 
     .stay_private {
-        padding: 90px 0 72px 0;
+        padding: 60px 0 60px 0;
     }
 
     .Commitment_section {
-        padding: 73px 0 145px 0;
+        padding: 73px 0 100px 0;
     }
 
     .leading_xxsm {
@@ -1253,31 +1268,39 @@ body {
         line-height: 61.25px;
     }
 }
-@media(min-width:1130px){
-        .image_bottom_shadow {
-                bottom: -29px;
-                right: -25px;
-            }
-                                .cost_sec_img_shadow {
-                                    max-width: 535px;
-                                }
+
+@media(min-width:1130px) {
+    .image_bottom_shadow {
+        bottom: -29px;
+        right: -25px;
+    }
+
+    .cost_sec_img_shadow {
+        max-width: 535px;
+    }
 }
 
 @media(min-width:1200px) {
-        .cost_sec_img_shadow {
-                max-width: 606px;
-            }
+    .cost_sec_img_shadow {
+        max-width: 606px;
+    }
+
     .image_bottom_shadow {
-            bottom: -30px;
-            right: -25px;
-        }
+        bottom: -30px;
+        right: -25px;
+    }
+
     .cross-img {
         top: 27%;
         left: 5%;
     }
 
     .card_section {
-        padding: 215px 0 90px 0;
+        padding: 215px 0 60px 0;
+    }
+
+    .stay_private {
+        padding: 90px 0 60px 0;
     }
 
     .five_arrow1 {
@@ -1327,5 +1350,9 @@ body {
 
     .hero_gif_dots {
         right: 46%;
+    }
+
+    .card_section {
+        padding: 215px 0 90px 0;
     }
 }
